@@ -25,6 +25,9 @@ app.use(cors());
 
 //routes
 
+app.get("/", (req, res)=>{
+   res.send("Hello World!")
+});
 app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
